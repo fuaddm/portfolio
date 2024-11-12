@@ -2,10 +2,10 @@
 import { MoveUpRight } from "lucide-react";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
-import Link from "next/link";
 import { FC, useRef } from "react";
 import { useHover } from "usehooks-ts";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export type ProjectCardProps = {
   title: string;
@@ -15,14 +15,12 @@ export type ProjectCardProps = {
   imageCenter?: boolean;
 };
 
-const MotionLink = motion.create(Link);
-
 const ProjectCard: FC<ProjectCardProps> = ({ title, subTitle, imageUrl, imageCenter = false, path }) => {
   const ref = useRef(null);
   const isHover = useHover(ref);
 
   return (
-    <MotionLink
+    <motion.a
       target="_blank"
       initial={false}
       animate={{
@@ -47,24 +45,19 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, subTitle, imageUrl, imageCen
         </motion.div>
       </div>
       <div className="relative aspect-[1/0.6] w-full overflow-hidden rounded-xl bg-background">
-        {imageUrl && imageCenter === false && (
+        {imageUrl && (
           <Image
             src={imageUrl}
             fill
-            className="h-full w-full object-cover"
-            alt=""
-          />
-        )}
-        {imageUrl && imageCenter === true && (
-          <Image
-            src={imageUrl}
-            fill
-            className="h-full w-full object-contain"
-            alt=""
+            className={cn({
+              "h-full w-full object-cover": true,
+              "object-contain": imageCenter,
+            })}
+            alt={title}
           />
         )}
       </div>
-    </MotionLink>
+    </motion.a>
   );
 };
 
