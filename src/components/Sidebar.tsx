@@ -133,26 +133,30 @@ const Sidebar = () => {
                   className="mx-auto h-px w-full bg-[rgb(34,34,34)]"
                 ></motion.div>
               </div>
-              <motion.div
+              <motion.a
+                target="_blank"
+                href="https://www.linkedin.com/in/fuaddm/"
                 initial={"hidden"}
                 animate={"visible"}
                 exit={"hidden"}
                 variants={variants}
                 custom={3}
-                className="text-base leading-relaxed text-foreground"
+                className="block w-fit text-base leading-relaxed text-foreground"
               >
                 Linkedin
-              </motion.div>
-              <motion.div
+              </motion.a>
+              <motion.a
+                target="_blank"
+                href="https://github.com/fuaddm/"
                 initial={"hidden"}
                 animate={"visible"}
                 exit={"hidden"}
                 variants={variants}
                 custom={3}
-                className="text-base leading-relaxed text-foreground"
+                className="block w-fit text-base leading-relaxed text-foreground"
               >
                 Github
-              </motion.div>
+              </motion.a>
             </div>
           </div>
         </motion.div>
