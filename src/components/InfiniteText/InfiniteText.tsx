@@ -1,5 +1,5 @@
 "use client";
-import { righteous } from "@/app/fonts";
+import { righteous } from "@/app/[locale]/fonts";
 import { cn } from "@/lib/utils";
 import styles from "./infinite.module.css";
 import { motion } from "framer-motion";
@@ -19,7 +19,6 @@ const InfiniteText = () => {
       transition={{
         duration: 0.5,
       }}
-      className=""
     >
       <div className="relative flex flex-col gap-2.5 overflow-hidden">
         <div
@@ -41,8 +40,8 @@ const InfiniteText = () => {
             [righteous.className]: true,
           })}
         >
-          <div className="pe-5">• UI/UX DESIGNER • FRONTEND DEVELOPER</div>
-          <div className="pe-5">• UI/UX DESIGNER • FRONTEND DEVELOPER</div>
+          <div className="uppercase">• REACT • NEXTJS • JAVASCRIPT • TYPESCRIPT</div>
+          <div className="uppercase">• REACT • NEXTJS • JAVASCRIPT • TYPESCRIPT</div>
         </div>
         <div
           className={cn({
@@ -51,8 +50,8 @@ const InfiniteText = () => {
             [righteous.className]: true,
           })}
         >
-          <div className="pe-5">• BACKEND DEVELOPER • PRODUCT MANAGER</div>
-          <div className="pe-5">• BACKEND DEVELOPER • PRODUCT MANAGER</div>
+          <div className="uppercase">• FIGMA • GIT • TAILWIND • ZUSTAND</div>
+          <div className="uppercase">• FIGMA • GIT • TAILWIND • ZUSTAND</div>
         </div>
       </div>
     </motion.div>

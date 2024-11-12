@@ -4,7 +4,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-const Accordion = () => {
+type AccordionProps = {
+  title: string;
+  text: string;
+};
+
+const Accordion = ({ title, text }: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -19,7 +24,7 @@ const Accordion = () => {
             "rotate-45": isOpen,
           })}
         />
-        <div className="text-base font-semibold text-foreground">How long does the web design process take?</div>
+        <div className="text-base font-semibold text-foreground">{title}</div>
       </div>
       <motion.div
         initial={{ height: "0px" }}
@@ -28,10 +33,7 @@ const Accordion = () => {
         }}
         className="overflow-hidden"
       >
-        <div className="pb-5 ps-10 text-base font-semibold text-[rgb(102,102,102)]">
-          My approach to web design revolves around understanding your specific needs and objectives. I kickstart projects with comprehensive research to grasp your brand identity, target audience,
-          and project goals. From there, I craft bespoke designs that not only visually resonate but also prioritize user experience and functionality.
-        </div>
+        <div className="pb-5 ps-10 text-base font-semibold text-[rgb(102,102,102)]">{text}</div>
       </motion.div>
     </div>
   );

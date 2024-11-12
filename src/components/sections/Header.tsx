@@ -1,11 +1,12 @@
 "use client";
-import { righteous } from "@/app/fonts";
+import { righteous } from "@/app/[locale]/fonts";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Link from "next/link";
 import meWebp from "~/me.webp";
 import { Burger } from "@/components/Burger";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 const Header = () => {
   return (
@@ -57,25 +58,26 @@ const Logo = () => {
 };
 
 const Nav = () => {
+  const t = useTranslations("Navs");
   return (
     <nav className="hidden w-fit items-center gap-5 md:flex">
       <Link
         href="/work"
         className="text-base font-medium text-foreground"
       >
-        /<span className="transition-opacity duration-300 md:hover:opacity-60">Work</span>
+        /<span className="transition-opacity duration-300 md:hover:opacity-60">{t("work")}</span>
       </Link>
       <Link
         href="/about"
         className="text-base font-medium text-foreground"
       >
-        /<span className="transition-opacity duration-300 md:hover:opacity-60">About</span>
+        /<span className="transition-opacity duration-300 md:hover:opacity-60">{t("about")}</span>
       </Link>
       <Link
         href="/contact"
         className="text-base font-medium text-foreground"
       >
-        /<span className="transition-opacity duration-300 md:hover:opacity-60">Contact</span>
+        /<span className="transition-opacity duration-300 md:hover:opacity-60">{t("contact")}</span>
       </Link>
     </nav>
   );

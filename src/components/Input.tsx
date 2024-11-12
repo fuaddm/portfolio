@@ -1,4 +1,4 @@
-import { inter } from "@/app/fonts";
+import { inter } from "@/app/[locale]/fonts";
 import { cn } from "@/lib/utils";
 
 const Input = ({ ...props }) => {

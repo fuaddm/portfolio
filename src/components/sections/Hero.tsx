@@ -1,7 +1,8 @@
 "use client";
-import { righteous } from "@/app/fonts";
+import { righteous } from "@/app/[locale]/fonts";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
   return (
@@ -30,15 +31,19 @@ const Hero = () => {
 };
 
 const HireMe = () => {
+  const t = useTranslations("HomePage");
+
   return (
     <div className="flex w-fit items-center gap-2.5 rounded-full border-t border-[rgb(66,66,66)] bg-[rgb(26,26,26)] px-4 py-2">
       <div className="h-2.5 w-2.5 rounded-full bg-[rgb(111,173,97)]"></div>
-      <div className="text-sm font-medium text-white">Available for hire</div>
+      <div className="text-sm font-medium text-white">{t("isAvailable")}</div>
     </div>
   );
 };
 
 const Greeting = () => {
+  const t = useTranslations("HomePage");
+
   return (
     <div
       className={cn({
@@ -46,19 +51,19 @@ const Greeting = () => {
         [righteous.className]: true,
       })}
     >
-      Hi, I&apos;m Fuad,
-      <br />a frontend developer
-      <br /> from Azerbaijan 🇦🇿
+      {t("introduction.first")}
+      <br />
+      {t("introduction.second")}
+      <br />
+      {t("introduction.third")}
     </div>
   );
 };
 
 const SubText = () => {
-  return (
-    <div className="text-base font-normal text-[rgb(145,145,145)] xl:max-w-[720px]">
-      With a background in industrial design and a keen eye for detail, I excel at transforming concepts into tangible realities by seamlessly integrating aesthetics with practical functionality.
-    </div>
-  );
+  const t = useTranslations("HomePage");
+
+  return <div className="text-base font-normal text-[rgb(145,145,145)] xl:max-w-[720px]">{t("summary")}</div>;
 };
 
 export { Hero };

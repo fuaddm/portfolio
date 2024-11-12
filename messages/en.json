@@ -1,0 +1,102 @@
+{
+  "Common": {
+    "name": "Fuad",
+    "position": "Frontend Developer",
+    "location": "Azerbaijan"
+  },
+  "HomePage": {
+    "isAvailable": "Available for hire",
+    "introduction": {
+      "first": "Hi, I'm Fuad,",
+      "second": "a frontend developer",
+      "third": "from Azerbaijan."
+    },
+    "summary": "I'm thrilled to be a frontend developer, where each line of code is a stroke of creativity, crafting engaging experiences that make technology accessible and enjoyable for everyone."
+  },
+  "Work": {
+    "title": "RECENT WORK"
+  },
+  "FAQs": {
+    "title": "FAQs",
+    "first": {
+      "question": "What technologies do you work with?",
+      "answer": "I work with JavaScript, TypeScript, React, Remix, Next.js, Vite, and Tailwind CSS. Using these, I develop dynamic, robust applications. TypeScript embeds type safety into my code, which helps in the early catching of errors and even helps in code maintenance. React is used whenever I build user interfaces that need to be more interactive and componentized in nature. It gives me a responsive feel for users. Remix and Next.js are when their powerhouse features come into play for server-side rendering, routing, and API integrations. Remix would take care of the faster page loading and better data fetching, while Next.js would offer easy deployment and scalability with its features like SSG and SSR. Vite is a fast and performant build tool for me that allows quick development and optimized production build. Finally, Tailwind CSS is my favorite utility-first CSS framework that empowers me to style very fast with minimal custom CSS to keep designs clean and efficient."
+    },
+    "second": {
+      "question": "How do you handle building responsive designs for a site that needs to work seamlessly across devices?",
+      "answer": "I use Tailwind CSS for building responsive designs. Tailwind's utility-first approach allows for rapid prototyping and ensures that layouts adapt seamlessly to various screen sizes. The framework’s built-in responsive design utilities make it easy to create mobile-first, flexible layouts that work across all devices. Additionally, by using media queries and flexible grid systems, I ensure a consistent user experience whether on a desktop, tablet, or mobile device."
+    },
+    "third": {
+      "question": "How do you design and build websites to meet accessibility standards?",
+      "answer": "For accessibility, I build reusable, accessible components in React, ensuring compliance with WCAG standards. Using semantic HTML and ARIA roles, I make sure that web applications are navigable for all users, including those with disabilities. Tailwind CSS aids in accessibility by providing color contrast utilities and responsive design that works for screen readers. This combination ensures that websites are both functional and inclusive."
+    },
+    "fourth": {
+      "question": "If a client needs to add features or update their website in the future, how do you ensure the codebase is flexible and scalable?",
+      "answer": "I bring flexibility and scalability to the codebase by applying design patterns in React, such as component composition, which keeps the code modular and maintainable since projects will grow bigger. React's component-based architecture facilitates reusability, while tools like TypeScript ensure type safety to avoid errors and enhance scalability. Structuring the codebase with clear separation of concerns and modular components will make it easier to update features and expand functionality in the future."
+    },
+    "fifth": {
+      "question": "When working on a project, how do you communicate progress and gather feedback from clients?",
+      "answer": "I prefer to use Jira and Trello when working on any project to track tasks, set deadlines, and assign responsibilities for effective communication and collaboration in the team. Regular stand-ups or sprint planning helps them sync priorities and timelines. Slack or something similar is used to keep lines of communication open; through this, one can address questions or concerns quickly. This approach allows others to be on the same page and work collaboratively in a team to ensure that all projects move smoothly and effectively."
+    }
+  },
+  "WorkTogether": {
+    "title": "LET'S WORK TOGETHER",
+    "greeting": "Say hello!"
+  },
+  "Footer": {
+    "main": "© Fuad. Built with ❤️"
+  },
+  "AboutPage": {
+    "title": "About.",
+    "me": "I’m a frontend developer from Azerbaijan with a passion for crafting pixel-perfect web experiences.",
+    "subtitle": "When I'm not coding, I’m out exploring nature through hiking, biking, and camping. Whether trekking through forests, climbing mountains, or enjoying the landscapes of Azerbaijan, I find joy and inspiration in outdoor adventures.",
+    "approach": {
+      "title": "MY APPROACH",
+      "first": {
+        "title": "User-Centered",
+        "text": "The primary focus is to prioritize the needs and experiences of users, ensuring that the web applications are intuitive, easy to navigate, and enjoyable to use. This involves researching user behavior, gathering feedback, and continuously refining interfaces to create seamless and user-friendly experiences."
+      },
+      "second": {
+        "title": "Functional",
+        "text": "As a frontend developer, it's essential to build applications that are not only visually appealing but also highly functional. Balancing aesthetics with usability ensures that the final product meets the user’s needs and performs well across different devices and environments."
+      },
+      "third": {
+        "title": "Innovative",
+        "text": "Innovation drives development, and creating unique, efficient, and optimized solutions is key. By staying up-to-date with emerging technologies and exploring new ideas, I aim to develop cutting-edge applications that provide exceptional user experiences while solving complex problems."
+      },
+      "fourth": {
+        "title": "Scalable & Maintainable",
+        "text": "Building scalable and maintainable applications is crucial for long-term success. By using modern frameworks like React, Next.js, and Remix, I ensure that the codebase remains clean, flexible, and easy to update, even as the project evolves and grows over time."
+      }
+    },
+    "skills": {
+      "title": "SKILLS",
+      "first": "Frontend Technologies",
+      "second": "Styling",
+      "third": "Design Patterns",
+      "fourth": "Version Control",
+      "fifth": "Accessibility",
+      "sixth": "Development Practices"
+    }
+  },
+  "ContactPage": {
+    "title": "Contact.",
+    "subtitle1": "Get in touch if you would like to work together.",
+    "subtitle2": "Thanks for stopping by. 🤘",
+    "inputs": {
+      "name": "Name",
+      "message": "Message"
+    },
+    "submit": "Send"
+  },
+  "WorkPage": {
+    "title": "Work.",
+    "me": "Here are some of my projects from the last few months.",
+    "subtitle": "Over the past few months, I've had the chance to work on a variety of projects that challenged my skills and pushed the boundaries of what's possible."
+  },
+  "Navs": {
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact"
+  }
+}

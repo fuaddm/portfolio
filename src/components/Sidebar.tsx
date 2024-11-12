@@ -1,10 +1,12 @@
 "use client";
 import { useSidebarStore } from "@/store/sidebar";
-import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 const Sidebar = () => {
+  const t = useTranslations("Navs");
   const isOpen = useSidebarStore((state) => state.isOpen);
   const toggle = useSidebarStore((state) => state.toggle);
 
@@ -87,7 +89,7 @@ const Sidebar = () => {
                     onClick={toggle}
                     className="text-[40px] font-semibold leading-tight text-foreground"
                   >
-                    /Work
+                    /{t("work")}
                   </Link>
                 </motion.div>
                 <motion.div
@@ -102,7 +104,7 @@ const Sidebar = () => {
                     onClick={toggle}
                     className="text-[40px] font-semibold leading-tight text-foreground"
                   >
-                    /About
+                    /{t("about")}
                   </Link>
                 </motion.div>
                 <motion.div
@@ -117,7 +119,7 @@ const Sidebar = () => {
                     onClick={toggle}
                     className="text-[40px] font-semibold leading-tight text-foreground"
                   >
-                    /Contact
+                    /{t("contact")}
                   </Link>
                 </motion.div>
               </nav>

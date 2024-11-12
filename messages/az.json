@@ -1,0 +1,102 @@
+{
+  "Common": {
+    "name": "Fuad",
+    "position": "Frontend Developer",
+    "location": "Azərbaycan"
+  },
+  "HomePage": {
+    "isAvailable": "İş üçün açıqam",
+    "introduction": {
+      "first": "Salam, mən Fuad,",
+      "second": "frontend developer",
+      "third": "Azərbaycandan."
+    },
+    "summary": "Frontend developer olaraq işləməkdən çox məmnunam, hər bir kod sətiri yaradıcı bir toxunuşdur, texnologiyanı hər kəs üçün əlçatan və əyləncəli hala gətirən təcrübələr yaradır."
+  },
+  "Work": {
+    "title": "YENİ İŞLƏR"
+  },
+  "FAQs": {
+    "title": "FAQ-lar",
+    "first": {
+      "question": "Hansı texnologiyalarla işləyirsiniz?",
+      "answer": "Mən JavaScript, TypeScript, React, Remix, Next.js, Vite və Tailwind CSS ilə işləyirəm. Bunlardan istifadə edərək dinamik, möhkəm tətbiqlər inkişaf etdirirəm. TypeScript, kodumda tip təhlükəsizliyi təmin edir, bu da səhvlərin erkən aşkar edilməsinə kömək edir və hətta kodun saxlanmasına kömək edir. React, istifadəçi interfeysləri qurarkən istifadə olunur və təcrübənin interaktiv və komponentli olmasına kömək edir. Bu, istifadəçilərə cavab verən hisslər verir. Remix və Next.js, server tərəfi render, yönləndirmə və API inteqrasiyaları üçün güclü xüsusiyyətləri ortaya qoyur. Remix, səhifələrin daha sürətli yüklənməsini və daha yaxşı məlumat gətirməyi təmin edərkən, Next.js sadə yerləşdirmə və miqyaslanabilirlik təklif edir, xüsusiyyətləri kimi SSG və SSR. Vite, sürətli inkişaf və optimallaşdırılmış istehsal quruluşu üçün istifadə etdiyim sürətli və performanslı bir quruluş alətidir. Nəhayət, Tailwind CSS mənim ən sevdiyim utility-first CSS çərçivəmdir, bu mənə dizaynları təmiz və səmərəli saxlamaq üçün minimal xüsusi CSS ilə çox sürətli stil verməyə imkan verir."
+    },
+    "second": {
+      "question": "Bir veb sayt üçün müxtəlif cihazlarda problemsiz işləməsi lazım olan responsiv dizaynları necə qurursunuz?",
+      "answer": "Responsiv dizaynlar qurmaq üçün Tailwind CSS-dən istifadə edirəm. Tailwind-in utility-first yanaşması sürətli prototipləmə imkanı verir və dizaynların müxtəlif ekran ölçülərinə uyğun olaraq problemsiz uyğunlaşmasını təmin edir. Çərçivənin daxili responsiv dizayn alətləri, mobil-first, elastik dizaynların yaradılmasını asanlaşdırır. Bundan əlavə, media queries və elastik grid sistemlərindən istifadə edərək, masaüstü, planşet və ya mobil cihazda konsistent bir istifadəçi təcrübəsi təmin edirəm."
+    },
+    "third": {
+      "question": "Veb saytları necə dizayn edir və qurursunuz ki, onlar əlçatanlıq standartlarına uyğun olsun?",
+      "answer": "Əlçatanlıq üçün, React-də təkrar istifadə oluna bilən, əlçatan komponentlər qururam, WCAG standartlarına uyğunluğunu təmin edirəm. Semantik HTML və ARIA rollarından istifadə edərək, veb tətbiqlərinin əlillər də daxil olmaqla bütün istifadəçilər üçün naviqasiya edilə bilən olmasını təmin edirəm. Tailwind CSS, rəng kontrastı alətləri və ekran oxuyucuları üçün uyğunlaşan dizayn təmin edərək əlçatanlığı artırır. Bu birləşmə, veb saytların həm funksional, həm də inklüziv olmasını təmin edir."
+    },
+    "fourth": {
+      "question": "Əgər müştəri gələcəkdə veb saytına yeni xüsusiyyətlər əlavə etmək və ya yeniləmək istəsə, kod bazasının çevik və miqyaslana bilən olduğunu necə təmin edirsiniz?",
+      "answer": "React-də dizayn naxışları tətbiq edərək kod bazasına çeviklik və miqyaslana bilənlik gətirirəm, məsələn komponent kompozisiyası kimi, bu da kodu modulyar və saxlanması asan edir, çünki layihələr böyüdükcə genişlənəcəkdir. React-in komponent əsaslı arxitekturası təkrar istifadəni asanlaşdırır, TypeScript kimi alətlər isə səhvlərin qarşısını almağa və miqyaslanabilirliyi artırmağa kömək edir. Kod bazasını aydın məsuliyyət ayrılması və modulyar komponentlərlə strukturlayaraq, xüsusiyyətləri yeniləmək və funksionallığı genişləndirmək asan olacaq."
+    },
+    "fifth": {
+      "question": "Bir layihə üzərində işləyərkən necə irəliləyişləri və müştərilərdən rəy alırsınız?",
+      "answer": "Mən hər hansı bir layihə üzərində işləyərkən Jira və Trello istifadə etməyi üstün tuturam ki, tapşırıqları izləyim, son tarixləri təyin edim və komanda daxilində effektiv ünsiyyət və əməkdaşlıq üçün məsuliyyətləri təyin edim. Müntəzəm olaraq stand-up görüşləri və sprint planlaması ilə prioritetləri və zaman çizelgələrini sinxronlaşdırmağa kömək edirəm. Slack və ya oxşar bir vasitə istifadə edərək əlaqə xəttlərini açıq saxlayıram; bununla suallar və narahatlıqlar tez həll edilir. Bu yanaşma başqalarının eyni səhifədə olmasına və komandada əməkdaşlıq edərək layihələrin hamar və effektiv bir şəkildə irəliləməsinə imkan verir."
+    }
+  },
+  "WorkTogether": {
+    "title": "GƏLİN BİRLİKdə ÇALIŞAQ",
+    "greeting": "Salam göndər!"
+  },
+  "Footer": {
+    "main": "© Fuad. ❤️ ilə qurulub"
+  },
+  "AboutPage": {
+    "title": "Haqqımda.",
+    "me": "Mən Azərbaycandan olan bir frontend developeram və mükəmməl piksel təcrübələri yaratmağa böyük həvəsim var.",
+    "subtitle": "Kod yazmadığım zaman təbiəti araşdırmaq üçün dağa dırmaşma, velosiped sürmə və çadır qurma kimi fəaliyyətlərlə məşğulam. Meşələrdə gəzmək, dağlara dırmaşmaq və ya Azərbaycanın mənzərələrinin dadını çıxarmaqla təbiət sərgüzəştlərindən ilham alıram.",
+    "approach": {
+      "title": "YANAŞMAM",
+      "first": {
+        "title": "İstifadəçi Mərkəzli",
+        "text": "Əsas diqqət istifadəçilərin ehtiyaclarına və təcrübələrinə verilir, veb tətbiqlərinin intuitiv, naviqasiya edilməsi asan və istifadə üçün əyləncəli olması təmin edilir. Bu, istifadəçi davranışını araşdırmaq, rəy toplamaq və interfeysləri daim təkmilləşdirərək problemsiz və istifadəçi dostu təcrübələr yaratmaq deməkdir."
+      },
+      "second": {
+        "title": "Funksional",
+        "text": "Frontend developer olaraq, yalnız vizual cəhətdən cazibədar deyil, həm də yüksək funksionallığa sahib tətbiqlər yaratmaq vacibdir. Estetika ilə istifadənin tarazlaşdırılması, son məhsulun istifadəçinin ehtiyaclarına uyğun olmasını və müxtəlif cihazlar və mühitlərdə yaxşı performans göstərməsini təmin edir."
+      },
+      "third": {
+        "title": "İnnovativ",
+        "text": "Yenilik inkişafı təşviq edir və unikal, səmərəli və optimallaşdırılmış həllər yaratmaq əsasdır. Yeni texnologiyalarla yenilikləri izləyərək və yeni ideyalar araşdıraraq, mükəmməl istifadəçi təcrübələri təqdim edərkən mürəkkəb problemləri həll edən qabaqcıl tətbiqlər inkişaf etdirməyi hədəfləyirəm."
+      },
+      "fourth": {
+        "title": "Miqyaslana bilən və Saxlanıla bilən",
+        "text": "Miqyaslana bilən və saxlanıla bilən tətbiqlərin yaradılması uzunmüddətli uğur üçün vacibdir. React, Next.js və Remix kimi müasir çərçivələrdən istifadə edərək, kod bazasının təmiz, çevik və asanlıqla yenilənə bilən olmasını təmin edirəm, layihə zaman keçdikcə inkişaf edər və böyüdükcə."
+      }
+    },
+    "skills": {
+      "title": "BACARIQLAR",
+      "first": "Frontend Texnologiyaları",
+      "second": "Stil vermə",
+      "third": "Dizayn Naxışları",
+      "fourth": "Versiya Nəzarəti",
+      "fifth": "Əlçatanlıq",
+      "sixth": "İnkişaf Təcrübələri"
+    }
+  },
+  "ContactPage": {
+    "title": "Əlaqə.",
+    "subtitle1": "Birlikdə işləmək istəyirsinizsə, əlaqə saxlayın.",
+    "subtitle2": "Ziyarət etdiyiniz üçün təşəkkürlər. 🤘",
+    "inputs": {
+      "name": "Ad",
+      "message": "Mesaj"
+    },
+    "submit": "Göndər"
+  },
+  "WorkPage": {
+    "title": "İşlər.",
+    "me": "Son bir neçə ay ərzində üzərində işlədiyim bəzi layihələrimi təqdim edirəm.",
+    "subtitle": "Son bir neçə ay ərzində bacarıqlarımı sınayan və mümkün olanın sərhədlərini zorlayan müxtəlif layihələrdə işləmək fürsətim oldu."
+  },
+  "Navs": {
+    "work": "İşlər",
+    "about": "Haqqımda",
+    "contact": "Əlaqə"
+  }
+}

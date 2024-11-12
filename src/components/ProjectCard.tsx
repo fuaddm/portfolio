@@ -12,16 +12,18 @@ export type ProjectCardProps = {
   subTitle: string;
   imageUrl?: StaticImport | string;
   path: string;
+  imageCenter?: boolean;
 };
 
 const MotionLink = motion.create(Link);
 
-const ProjectCard: FC<ProjectCardProps> = ({ title, subTitle, imageUrl, path }) => {
+const ProjectCard: FC<ProjectCardProps> = ({ title, subTitle, imageUrl, imageCenter = false, path }) => {
   const ref = useRef(null);
   const isHover = useHover(ref);
 
   return (
     <MotionLink
+      target="_blank"
       initial={false}
       animate={{
         transform: isHover ? "translateY(-4px) scale(1.01)" : "translateY(0px) scale(1)",
@@ -44,11 +46,20 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, subTitle, imageUrl, path }) 
           <MoveUpRight className="h-8 w-8 stroke-foreground" />
         </motion.div>
       </div>
-      <div className="aspect-[1/0.6] w-full overflow-hidden rounded-xl bg-background">
-        {imageUrl && (
+      <div className="relative aspect-[1/0.6] w-full overflow-hidden rounded-xl bg-background">
+        {imageUrl && imageCenter === false && (
           <Image
             src={imageUrl}
+            fill
             className="h-full w-full object-cover"
+            alt=""
+          />
+        )}
+        {imageUrl && imageCenter === true && (
+          <Image
+            src={imageUrl}
+            fill
+            className="h-full w-full object-contain"
             alt=""
           />
         )}

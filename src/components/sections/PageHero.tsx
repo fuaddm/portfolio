@@ -1,6 +1,6 @@
 "use client";
 
-import { righteous } from "@/app/fonts";
+import { righteous } from "@/app/[locale]/fonts";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { FC } from "react";

@@ -6,10 +6,12 @@ import { useHover } from "usehooks-ts";
 import { MoveUpRight } from "lucide-react";
 import { Linkedin } from "@/icons/Linkedin";
 import { Github } from "@/icons/Github";
+import { useTranslations } from "next-intl";
 
 const LetsWork = () => {
+  const t = useTranslations("WorkTogether");
   return (
-    <Section title="LET'S WORK TOGETHER">
+    <Section title={t("title")}>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-[1fr_min-content_min-content]">
         <EmailCard />
         <SocialCard path="https://www.linkedin.com/in/fuaddm/">
@@ -30,6 +32,7 @@ const LetsWork = () => {
 const EmailCard = () => {
   const ref = useRef(null);
   const isHover = useHover(ref);
+  const t = useTranslations("WorkTogether");
 
   return (
     <motion.a
@@ -43,7 +46,7 @@ const EmailCard = () => {
     >
       <div className="flex items-start justify-between gap-3 md:items-center">
         <div className="flex flex-col justify-between gap-2.5 overflow-hidden">
-          <div className="text-base font-normal text-[rgb(127,127,127)]">Say hello!</div>
+          <div className="text-base font-normal text-[rgb(127,127,127)]">{t("greeting")}</div>
           <div className="line-clamp-1 text-xl font-bold text-foreground">dmirciyevfuad@gmail.com</div>
         </div>
         <motion.div
@@ -73,7 +76,7 @@ const SocialCard = ({ path = "#", children }: { path?: string; children?: ReactN
       ref={ref}
       target="_blank"
       href={path}
-      className="block h-full rounded-3xl border-t border-[rgb(66,66,66)] bg-[rgb(26,26,26)] p-6 md:aspect-square"
+      className="block h-full rounded-3xl border-t border-[rgb(66,66,66)] bg-[rgb(26,26,26)] p-6 md:w-[111px]"
     >
       {children}
     </motion.a>

@@ -1,35 +1,25 @@
 import { ProjectCard } from "@/components/ProjectCard";
 import { Section } from "./Section";
-import orbizPic from "~/orbiz.png";
+import { useTranslations } from "next-intl";
+import { projects, projectType } from "@/data/projects";
 
 const RecentWorks = () => {
+  const t = useTranslations("Work");
   return (
-    <Section title="RECENT WORK">
+    <Section title={t("title")}>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-        <ProjectCard
-          title="Zephyr"
-          subTitle="Branding & App"
-          imageUrl={orbizPic}
-          path="#"
-        />
-        <ProjectCard
-          title="NovaTech"
-          subTitle="Website & App"
-          imageUrl={orbizPic}
-          path="#"
-        />
-        <ProjectCard
-          title="Zephyr"
-          subTitle="Branding & App"
-          imageUrl={orbizPic}
-          path="#"
-        />
-        <ProjectCard
-          title="NovaTech"
-          subTitle="Website & App"
-          imageUrl={orbizPic}
-          path="#"
-        />
+        {projects.map((project: projectType) => {
+          return (
+            <ProjectCard
+              key={project.id}
+              title={project.name}
+              subTitle={project.type}
+              imageUrl={project.mainImage}
+              path={project.link}
+              imageCenter={project.imageCenter}
+            />
+          );
+        })}
       </div>
     </Section>
   );
