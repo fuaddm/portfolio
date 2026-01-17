@@ -1,0 +1,11 @@
+---
+import { content } from '../static-content';
+import SectionTitle from './SectionTitle.astro';
+---
+
+<div class="inside-container flex flex-col gap-2">
+  <SectionTitle title={content.aboutTitle} />
+  <p class="text-on-surface-variant leading-relaxed">
+    {content.aboutDescription}
+  </p>
+</div>

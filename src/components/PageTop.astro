@@ -1,0 +1,45 @@
+---
+import { Clock, MapPin } from '@lucide/astro';
+import { content } from '../static-content';
+---
+
+<div class="font-secondary text-on-surface-variant inside-container flex items-center justify-between text-xs">
+  <div class="flex items-center gap-2">
+    <MapPin class="h-4 w-4 stroke-3" />
+    <div class="tracking-wider uppercase">{content.location}</div>
+  </div>
+
+  <div
+    data-time
+    class="flex items-center gap-2 text-sm opacity-0 transition"
+  >
+    <Clock class="h-4 w-4 stroke-3" />
+    <div data-clock>00:00</div>
+    <div>GMT+4</div>
+  </div>
+</div>
+
+<script>
+  import { formatTimeGMT4 } from '../lib/time';
+
+  const time = document.querySelector('[data-time]') as HTMLElement;
+  const clock = document.querySelector('[data-clock]') as HTMLElement;
+
+  function updateClock(): void {
+    if (!clock) return;
+
+    const now: Date = new Date();
+
+    clock.textContent = formatTimeGMT4(now);
+  }
+
+  function makeTimeVisible() {
+    if (!clock || !time) return;
+
+    time.style.opacity = '100%';
+  }
+
+  updateClock();
+  makeTimeVisible();
+  setInterval(updateClock, 1000);
+</script>

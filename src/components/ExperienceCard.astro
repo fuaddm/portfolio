@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import type { Experience } from '../types/experience';
+import GeneralCardText from './GeneralCardText.astro';
+
+interface Props {
+  experience: Experience;
+}
+
+const { experience } = Astro.props as Props;
+---
+
+<div class="grid grid-cols-[2rem_1fr] gap-4">
+  <div>
+    <div class="bg-surface-container aspect-square w-full overflow-hidden rounded-lg">
+      {
+        experience.companyLogo && (
+          <img
+            src={experience.companyLogo}
+            alt=""
+            class="h-full w-full object-contain object-center"
+          />
+        )
+      }
+    </div>
+  </div>
+
+  <div class="mt-0.5 flex flex-col gap-8">
+    <GeneralCardText
+      title={experience.title}
+      name={experience.name}
+      startDate={experience.startDate}
+      endDate={experience.endDate || 'now'}
+      description={experience.description}
+    />
+
+    {
+      experience.children?.map((experienceChild) => {
+        return (
+          <GeneralCardText
+            title={experienceChild.title}
+            name={experience.name}
+            startDate={experienceChild.startDate}
+            endDate={experienceChild.endDate || 'now'}
+            description={experienceChild.description}
+          />
+        );
+      })
+    }
+  </div>
+</div>

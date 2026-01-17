@@ -1,0 +1,19 @@
+---
+import type { CardText } from '../types/card';
+
+const { title, name, startDate, endDate, description } = Astro.props as CardText;
+---
+
+<div>
+  <div class="mb-0.5 font-semibold">{title}</div>
+
+  <div class="text-on-surface-variant mb-3 flex items-center gap-1.5 font-mono text-xs">
+    <div class="uppercase">{name}</div>
+    <div class="bg-on-surface-variant aspect-square w-0.5 rounded-full"></div>
+    <div>
+      {startDate} - {endDate || ''}
+    </div>
+  </div>
+
+  <div class="text-on-surface-variant">{description}</div>
+</div>
