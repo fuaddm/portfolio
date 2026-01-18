@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 @utility container {
   padding-inline: 1rem;
   margin-inline: auto;
@@ -70,7 +72,7 @@
   --color-surface-container-highest: rgb(234 225 212);
 }
 
-.dark {
+[data-theme='dark'] {
   --color-primary: rgb(227 195 108);
   --color-surface-tint: rgb(227 195 108);
   --color-on-primary: rgb(61 47 0);

@@ -1,6 +1,7 @@
 ---
 import { Clock, MapPin } from '@lucide/astro';
 import { content } from '../static-content';
+import ThemeToggle from './ThemeToggle.astro';
 ---
 
 <div class="font-secondary text-on-surface-variant inside-container flex items-center justify-between text-xs">
@@ -9,13 +10,17 @@ import { content } from '../static-content';
     <div class="tracking-wider uppercase">{content.location}</div>
   </div>
 
-  <div
-    data-time
-    class="flex items-center gap-2 text-sm opacity-0 transition"
-  >
-    <Clock class="h-4 w-4 stroke-3" />
-    <div data-clock>00:00</div>
-    <div>GMT+4</div>
+  <div class="flex items-center gap-3">
+    <div
+      data-time
+      class="flex items-center gap-2 text-sm opacity-0 transition"
+    >
+      <Clock class="h-4 w-4 stroke-3" />
+      <div data-clock>00:00</div>
+      <div>GMT+4</div>
+    </div>
+
+    <ThemeToggle />
   </div>
 </div>
 

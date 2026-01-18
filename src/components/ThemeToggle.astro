@@ -1,0 +1,26 @@
+---
+import { Moon, SunMedium } from '@lucide/astro';
+---
+
+<button
+  id="themeToggle"
+  class="bg-surface-container relative h-6 w-6 overflow-hidden rounded-full"
+  aria-label="Toggle theme"
+>
+  <Moon
+    id="iconMoon"
+    class="absolute top-1/2 left-1/2 h-4 -translate-1/2 transition dark:-translate-x-6 dark:translate-y-3"
+  />
+  <SunMedium
+    id="iconSun"
+    class="absolute top-1/2 left-1/2 h-4 -translate-x-6 -translate-y-6 transition dark:-translate-1/2"
+  />
+</button>
+
+<script>
+  import { toggleTheme } from '../lib/theme';
+
+  const btn = document.getElementById('themeToggle') as HTMLElement;
+
+  btn?.addEventListener('click', toggleTheme);
+</script>
